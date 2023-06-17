@@ -1,20 +1,18 @@
 import React from 'react';
-import Occupation from './src/components/Occupation';
+
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Profile from './src/components/Profile';
+
+import Hobby from './src/hobbies/Hobby';
 const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator >
         <Stack.Screen
-          name="Occupation"
-          component={Occupation}
+          name="Hobby"
+          component={Hobby}
           options={{headerShown: false}}
-        />
-        <Stack.Screen name="Profile" 
-        component={Profile} 
         />
       </Stack.Navigator>
     </NavigationContainer>
